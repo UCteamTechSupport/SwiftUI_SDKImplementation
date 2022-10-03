@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "usercentrics-spm-sdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://bitbucket.org/usercentricscode/usercentrics-spm-sdk",
+      "state" : {
+        "revision" : "fe529249ec62c74b85b831f669e478449e554ebf",
+        "version" : "2.7.3"
+      }
+    },
+    {
+      "identity" : "usercentrics-spm-ui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://bitbucket.org/usercentricscode/usercentrics-spm-ui",
+      "state" : {
+        "revision" : "7ab395d6859c3df5fd08ddb34809171f0f457997",
+        "version" : "2.7.3"
+      }
+    }
+  ],
+  "version" : 2
+}
