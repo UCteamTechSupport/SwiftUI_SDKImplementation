@@ -12,15 +12,28 @@ import UsercentricsUI
 
 struct UsercentricsUIViewController: UIViewControllerRepresentable {
     
+    private let tableView: UITableView = UITableView(frame: .zero, style: .grouped)
+
+    
     typealias UIViewControllerType = UIViewController
     
     let view = UIViewController()
     
     func makeUIViewController(context: Context) -> UIViewController {
-
-        showFirstLayer()
-        
+                        
         return view
+    }
+    
+    func getTopMostViewController() -> UIViewController? {
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        guard let window = windowScene?.windows.first else { return nil }
+        var topMostViewController = window.rootViewController
+        while let presentedViewController = topMostViewController?.presentedViewController {
+            topMostViewController = presentedViewController
+        }
+
+        return topMostViewController
     }
     
     func updateUIViewController(_ uiViewController: UIViewController, context: Context) {
@@ -28,10 +41,13 @@ struct UsercentricsUIViewController: UIViewControllerRepresentable {
     }
     
     func showFirstLayer() {
+        
         UsercentricsCore.isReady { status in
             let banner = UsercentricsBanner()
             
-            banner.showFirstLayer(hostView: view, // UIViewController
+            let newView = getTopMostViewController() ?? view
+                
+            banner.showFirstLayer(hostView: newView, // UIViewController
                                   layout: UsercentricsLayout.sheet) { userResponse in
                 print("Consents: \(userResponse)")
             }
@@ -41,10 +57,13 @@ struct UsercentricsUIViewController: UIViewControllerRepresentable {
     }
     
     func showSecondLayer() {
+        
         UsercentricsCore.isReady { status in
             let banner = UsercentricsBanner()
             
-            banner.showSecondLayer(hostView: view) { userResponse in
+            let newView = getTopMostViewController() ?? view
+
+            banner.showSecondLayer(hostView: newView) { userResponse in
                 print("Consents: \(userResponse)")
             }
         } onFailure: { error in
