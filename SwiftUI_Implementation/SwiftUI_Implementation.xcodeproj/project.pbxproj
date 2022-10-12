@@ -17,6 +17,7 @@
 		8E2E04C528EB2A4600F03CA7 /* Usercentrics in Frameworks */ = {isa = PBXBuildFile; productRef = 8E2E04C428EB2A4600F03CA7 /* Usercentrics */; };
 		8E2E04C828EB2A6500F03CA7 /* UsercentricsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8E2E04C728EB2A6500F03CA7 /* UsercentricsUI */; };
 		8E2E04CA28EB2A9700F03CA7 /* UsercentricsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E04C928EB2A9700F03CA7 /* UsercentricsUIViewController.swift */; };
+		8E9ED94428F6E01F002438A2 /* SDKInitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ED94328F6E01F002438A2 /* SDKInitData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		8E2E04B428EB29C100F03CA7 /* SwiftUI_ImplementationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ImplementationUITests.swift; sourceTree = "<group>"; };
 		8E2E04B628EB29C100F03CA7 /* SwiftUI_ImplementationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ImplementationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8E2E04C928EB2A9700F03CA7 /* UsercentricsUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsercentricsUIViewController.swift; sourceTree = "<group>"; };
+		8E9ED94328F6E01F002438A2 /* SDKInitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKInitData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				8E2E049D28EB29C000F03CA7 /* Assets.xcassets */,
 				8E2E049F28EB29C000F03CA7 /* Preview Content */,
 				8E2E04C928EB2A9700F03CA7 /* UsercentricsUIViewController.swift */,
+				8E9ED94328F6E01F002438A2 /* SDKInitData.swift */,
 			);
 			path = SwiftUI_Implementation;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9ED94428F6E01F002438A2 /* SDKInitData.swift in Sources */,
 				8E2E049C28EB29BD00F03CA7 /* ContentView.swift in Sources */,
 				8E2E04CA28EB2A9700F03CA7 /* UsercentricsUIViewController.swift in Sources */,
 				8E2E049A28EB29BD00F03CA7 /* SwiftUI_ImplementationApp.swift in Sources */,
