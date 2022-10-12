@@ -32,7 +32,6 @@ struct ContentView: View {
             VStack{
                 Button("Show First Layer"){
                     UsercentricsUIViewController().showFirstLayer()
-                    
                 }
                 .frame(width: 200, height: 50)
                 .foregroundColor(.white)

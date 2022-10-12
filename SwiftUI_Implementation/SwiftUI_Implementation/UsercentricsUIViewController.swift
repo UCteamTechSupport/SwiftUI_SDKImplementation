@@ -32,7 +32,7 @@ struct UsercentricsUIViewController: UIViewControllerRepresentable {
             let banner = UsercentricsBanner()
             
             banner.showFirstLayer(hostView: view, // UIViewController
-                                  layout: UsercentricsLayout.sheet) { userResponse in
+                                  layout: UsercentricsLayout.full) { userResponse in
                 print("Consents: \(userResponse)")
             }
         } onFailure: { error in
