@@ -49,11 +49,7 @@ struct ContentView: View {
                 .padding(5)
                 
                 Button("Show WebView"){
-                    /*
-                    let url = "https://app.usercentrics.eu/browser-ui/preview/index.html?settingsId=\(SDKDefaults().settingsId)"
-                    
-                    restoreSessionOnWebview(url: url)
-                     */
+                    UsercentricsUIViewController().restoreUserSession(url: "https://app.usercentrics.eu/browser-ui/preview/index.html?settingsId=\(SDKInitData().settingsId)")
                 }
                 .frame(width: 200, height: 50)
                 .foregroundColor(.white)
