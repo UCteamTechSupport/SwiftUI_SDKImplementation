@@ -47,8 +47,7 @@ struct UsercentricsUIViewController: UIViewControllerRepresentable {
             let banner = UsercentricsBanner(bannerSettings: getBannerSettings())
             let newView = getTopMostViewController() ?? view
             
-            banner.showFirstLayer(hostView: newView, // UIViewController
-                                  layout: UsercentricsLayout.sheet) { userResponse in
+            banner.showFirstLayer(hostView: newView) { userResponse in
                 print("Consents: \(userResponse)")
             }
         } onFailure: { error in
@@ -144,7 +143,8 @@ struct UsercentricsUIViewController: UIViewControllerRepresentable {
                                          message: getMessageSettings(),
                                          buttonLayout: getButtonLayout(),
                                          backgroundColor:UIColor(red: 218, green: 218, blue: 218, alpha: 1.0),
-                                         cornerRadius: 20
+                                         cornerRadius: 20,
+                                         layout: UsercentricsLayout.sheet
                                     )
 
         let secondLayerSettings = SecondLayerStyleSettings(
@@ -152,11 +152,12 @@ struct UsercentricsUIViewController: UIViewControllerRepresentable {
                                             showCloseButton: true
                                 )
         
-        return BannerSettings(
-            generalStyleSettings: generalStyleSettings,
-            firstLayerStyleSettings: firstLayerSettings,
-            secondLayerStyleSettings: secondLayerSettings
-        )
+        return BannerSettings()
+//        BannerSettings(
+//            generalStyleSettings: generalStyleSettings,
+//            firstLayerStyleSettings: firstLayerSettings,
+//            secondLayerStyleSettings: secondLayerSettings
+//        )
     }
     
     func getTitleSettings() -> TitleSettings {

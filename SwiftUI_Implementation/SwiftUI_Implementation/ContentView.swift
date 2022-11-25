@@ -7,19 +7,21 @@
 
 import SwiftUI
 import Usercentrics
+import UsercentricsUI
 
 struct ContentView: View {
+    let banner = UsercentricsBanner()
     
-    init() {
-        let options = UsercentricsOptions(settingsId: "hKTmJ4UVL")
-        UsercentricsCore.configure(options: options)
-        print("Usercentrics initialized")
-        UsercentricsCore.isReady { it in
-            print(it.consents)
-        } onFailure: { error in
-            print("[Usercentrics][Error]: \(error)")
-        }
-    }
+//    init() {
+//        let options = UsercentricsOptions(settingsId: SDKInitData().settingsId)
+//        UsercentricsCore.configure(options: options)
+//        print("Usercentrics initialized")
+//        UsercentricsCore.isReady { it in
+//            print(it.consents)
+//        } onFailure: { error in
+//            print("[Usercentrics][Error]: \(error)")
+//        }
+//    }
     
     var body: some View {
         VStack {
@@ -31,6 +33,9 @@ struct ContentView: View {
             Spacer()
             VStack{
                 Button("Show First Layer"){
+//                    banner.showFirstLayer(){ userResponse in
+//                        print(userResponse.consents)
+//                    }
                     UsercentricsUIViewController().showFirstLayer()
                 }
                 .frame(width: 200, height: 50)
@@ -40,7 +45,11 @@ struct ContentView: View {
                 .padding(5)
                 
                 Button("Show Second Layer"){
+//                    banner.showSecondLayer(){ userResponse in
+//                        print(userResponse.consents)
+//                    }
                     UsercentricsUIViewController().showSecondLayer()
+                    
                 }
                 .frame(width: 200, height: 50)
                 .foregroundColor(.white)
@@ -50,6 +59,7 @@ struct ContentView: View {
                 
                 Button("Show WebView"){
                     UsercentricsUIViewController().restoreUserSession(url: "https://app.usercentrics.eu/browser-ui/preview/index.html?settingsId=\(SDKInitData().settingsId)")
+//                    UsercentricsUIViewController().restoreUserSession(url: "https://app.usercentrics.eu/browser-ui/preview/index.html?settingsId=\(SDKInitData().settingsId)")
                 }
                 .frame(width: 200, height: 50)
                 .foregroundColor(.white)

@@ -6,9 +6,13 @@
 //
 
 import SwiftUI
+import Usercentrics
 
 @main
 struct SwiftUI_ImplementationApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

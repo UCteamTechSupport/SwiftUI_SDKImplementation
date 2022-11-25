@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E2C7D8A2927C7D6009808EF /* Usercentrics in Frameworks */ = {isa = PBXBuildFile; productRef = 8E2C7D892927C7D6009808EF /* Usercentrics */; };
+		8E2C7D8D2927C7F1009808EF /* UsercentricsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8E2C7D8C2927C7F1009808EF /* UsercentricsUI */; };
 		8E2E049A28EB29BD00F03CA7 /* SwiftUI_ImplementationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E049928EB29BD00F03CA7 /* SwiftUI_ImplementationApp.swift */; };
 		8E2E049C28EB29BD00F03CA7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E049B28EB29BD00F03CA7 /* ContentView.swift */; };
 		8E2E049E28EB29C000F03CA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E2E049D28EB29C000F03CA7 /* Assets.xcassets */; };
@@ -14,10 +16,9 @@
 		8E2E04AB28EB29C100F03CA7 /* SwiftUI_ImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E04AA28EB29C100F03CA7 /* SwiftUI_ImplementationTests.swift */; };
 		8E2E04B528EB29C100F03CA7 /* SwiftUI_ImplementationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E04B428EB29C100F03CA7 /* SwiftUI_ImplementationUITests.swift */; };
 		8E2E04B728EB29C100F03CA7 /* SwiftUI_ImplementationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E04B628EB29C100F03CA7 /* SwiftUI_ImplementationUITestsLaunchTests.swift */; };
-		8E2E04C528EB2A4600F03CA7 /* Usercentrics in Frameworks */ = {isa = PBXBuildFile; productRef = 8E2E04C428EB2A4600F03CA7 /* Usercentrics */; };
-		8E2E04C828EB2A6500F03CA7 /* UsercentricsUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8E2E04C728EB2A6500F03CA7 /* UsercentricsUI */; };
 		8E2E04CA28EB2A9700F03CA7 /* UsercentricsUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2E04C928EB2A9700F03CA7 /* UsercentricsUIViewController.swift */; };
 		8E9ED94428F6E01F002438A2 /* SDKInitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9ED94328F6E01F002438A2 /* SDKInitData.swift */; };
+		8EE3373E29311A080031393E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3373D29311A080031393E /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		8E2E04B628EB29C100F03CA7 /* SwiftUI_ImplementationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ImplementationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8E2E04C928EB2A9700F03CA7 /* UsercentricsUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsercentricsUIViewController.swift; sourceTree = "<group>"; };
 		8E9ED94328F6E01F002438A2 /* SDKInitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKInitData.swift; sourceTree = "<group>"; };
+		8EE3373D29311A080031393E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E2E04C828EB2A6500F03CA7 /* UsercentricsUI in Frameworks */,
-				8E2E04C528EB2A4600F03CA7 /* Usercentrics in Frameworks */,
+				8E2C7D8D2927C7F1009808EF /* UsercentricsUI in Frameworks */,
+				8E2C7D8A2927C7D6009808EF /* Usercentrics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +110,7 @@
 				8E2E049F28EB29C000F03CA7 /* Preview Content */,
 				8E2E04C928EB2A9700F03CA7 /* UsercentricsUIViewController.swift */,
 				8E9ED94328F6E01F002438A2 /* SDKInitData.swift */,
+				8EE3373D29311A080031393E /* AppDelegate.swift */,
 			);
 			path = SwiftUI_Implementation;
 			sourceTree = "<group>";
@@ -154,8 +157,8 @@
 			);
 			name = SwiftUI_Implementation;
 			packageProductDependencies = (
-				8E2E04C428EB2A4600F03CA7 /* Usercentrics */,
-				8E2E04C728EB2A6500F03CA7 /* UsercentricsUI */,
+				8E2C7D892927C7D6009808EF /* Usercentrics */,
+				8E2C7D8C2927C7F1009808EF /* UsercentricsUI */,
 			);
 			productName = SwiftUI_Implementation;
 			productReference = 8E2E049628EB29BD00F03CA7 /* SwiftUI_Implementation.app */;
@@ -230,8 +233,8 @@
 			);
 			mainGroup = 8E2E048D28EB29BD00F03CA7;
 			packageReferences = (
-				8E2E04C328EB2A4600F03CA7 /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */,
-				8E2E04C628EB2A6500F03CA7 /* XCRemoteSwiftPackageReference "usercentrics-spm-ui" */,
+				8E2C7D882927C7D6009808EF /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */,
+				8E2C7D8B2927C7F1009808EF /* XCRemoteSwiftPackageReference "usercentrics-spm-ui" */,
 			);
 			productRefGroup = 8E2E049728EB29BD00F03CA7 /* Products */;
 			projectDirPath = "";
@@ -278,6 +281,7 @@
 				8E9ED94428F6E01F002438A2 /* SDKInitData.swift in Sources */,
 				8E2E049C28EB29BD00F03CA7 /* ContentView.swift in Sources */,
 				8E2E04CA28EB2A9700F03CA7 /* UsercentricsUIViewController.swift in Sources */,
+				8EE3373E29311A080031393E /* AppDelegate.swift in Sources */,
 				8E2E049A28EB29BD00F03CA7 /* SwiftUI_ImplementationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,33 +609,33 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8E2E04C328EB2A4600F03CA7 /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */ = {
+		8E2C7D882927C7D6009808EF /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://bitbucket.org/usercentricscode/usercentrics-spm-sdk";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.7.3;
+				kind = exactVersion;
+				version = 2.7.6;
 			};
 		};
-		8E2E04C628EB2A6500F03CA7 /* XCRemoteSwiftPackageReference "usercentrics-spm-ui" */ = {
+		8E2C7D8B2927C7F1009808EF /* XCRemoteSwiftPackageReference "usercentrics-spm-ui" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://bitbucket.org/usercentricscode/usercentrics-spm-ui";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.7.3;
+				kind = exactVersion;
+				version = 2.7.6;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8E2E04C428EB2A4600F03CA7 /* Usercentrics */ = {
+		8E2C7D892927C7D6009808EF /* Usercentrics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8E2E04C328EB2A4600F03CA7 /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */;
+			package = 8E2C7D882927C7D6009808EF /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */;
 			productName = Usercentrics;
 		};
-		8E2E04C728EB2A6500F03CA7 /* UsercentricsUI */ = {
+		8E2C7D8C2927C7F1009808EF /* UsercentricsUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8E2E04C628EB2A6500F03CA7 /* XCRemoteSwiftPackageReference "usercentrics-spm-ui" */;
+			package = 8E2C7D8B2927C7F1009808EF /* XCRemoteSwiftPackageReference "usercentrics-spm-ui" */;
 			productName = UsercentricsUI;
 		};
 /* End XCSwiftPackageProductDependency section */
